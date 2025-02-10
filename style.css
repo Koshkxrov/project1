@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Первая страница */
+#registration {
+    background: #002244;
+    color: white;
+    padding: 50px;
+    height: 100vh;
+}
+
+/* "Oops" страница */
+#oopsPage {
+    background: #f2f2f2;
+    padding: 50px;
+    height: 100vh;
+}
+
+/* Вторая страница с сердечками и котиками (замени 'hearts-cats-bg.jpg' на свою картинку) */
+#surprise {
+    background: url('kotiks.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #ff4d6d;
+    padding: 50px;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.buttons {
+    position: relative;
+}
+
+#yesButton, #noButton {
+    font-size: 24px;
+    padding: 15px 30px;
+}
+
+#yesButton {
+    background: green;
+    color: white;
+    border: none;
+}
+
+#noButton {
+    background: red;
+    color: white;
+    border: none;
+    position: absolute;
+}
+
+#noChoice {
+    font-size: 24px;
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+/* Финальное поздравление с продленным фоном */
+#celebration {
+    background: #ffebf0;
+    color: #ff4d6d;
+    padding: 50px;
+    min-height: 100vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

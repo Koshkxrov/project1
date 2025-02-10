@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Строгая форма регистрации -->
+    <div id="registration">
+        <h1>Welcome to SkyPass</h1>
+        <p>Book your exclusive flight experience.</p>
+        <input type="text" id="nameInput" placeholder="Enter your first name">
+        <input type="text" id="surnameInput" placeholder="Enter your last name">
+        <button onclick="showOopsPage()">Next</button>
+    </div>
+
+    <!-- Страница "Oops, wrong surname!" -->
+    <div id="oopsPage" class="hidden">
+        <h2>Oops, it seems like you entered the wrong surname!</h2>
+        <p>Are you ready to answer one more question?</p>
+        <button onclick="showSurprise()">Next</button>
+    </div>
+
+    <!-- Вопрос про Валентинку -->
+    <div id="surprise" class="hidden">
+        <h2>Koshkarova Bayana, will you be my Valentine?</h2>
+        <img src="yourphoto.jpg" alt="Your Photo">
+        <div class="buttons">
+            <button id="yesButton" onclick="showCelebration()">Yes</button>
+            <button id="noButton" onmouseover="moveNoButton()">No</button>
+        </div>
+        <p id="noChoice" class="hidden">There is no other way! ❤️</p>
+    </div>
+
+    <!-- Финальное поздравление -->
+    <div id="celebration" class="hidden">
+        <h2>Happy Valentine's Day, Zhanym! 🎉</h2>
+        <p id="customMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
